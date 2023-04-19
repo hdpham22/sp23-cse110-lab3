@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/screenshots/clock.png">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
+    <header class="center">
         <h1>Meeting Minutes</h1>
-        <nav>
+        <nav style="background-color: aquamarine;">
             <p>This is Nav</p>
         </nav>
         <hr>  
@@ -19,14 +20,14 @@
     <main>
         <section>
             <h2>Priorities</h2>
-            <ol>
+            <ol class="ems">
                 <li><b>Create</b> HTML Page</li>
-                <li><b>Review</b>HTML Page</li>
+                <li><b>Review</b> HTML Page</li>
                 <li><b>Submit</b> HTML Page</li>
             </ol>
         </section>
         <h3>Agenda</h3>
-        <ul>
+        <ul class="rems">
             <li><em>Role Call</em></li>
             <li><i>Assign Roles</i></li>
             <li><strong>Work Work Work</strong></li>
@@ -35,7 +36,7 @@
         <br>
 
         <section>
-            <img src="screenshots/headshot.jpg" alt="Hieu Pham" width="250" height="300">
+            <img id="headshot" src="screenshots/headshot.jpg" alt="Hieu Pham" width="250" height="300">
             <p>check out my <a href="https://www.linkedin.com/in/hieuducpham/">LinkedIn</a></p>
             <audio controls>
                 <source src="Bruh-Sound-Effect.mp3">
@@ -48,7 +49,7 @@
             </video>
         </section>
 
-        <form>
+        <form class="center">
             <fieldset>
                 <legend>Radio</legend>
                 
@@ -102,7 +103,7 @@
             <label>date</label>
             <input type="date">
             <br>
-            <button>Submit</button>
+            <button id="sub">Submit</button>
         </form>
 
     </main>

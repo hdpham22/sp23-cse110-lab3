@@ -1,0 +1,28 @@
+/*This is a CSS comment*/
+nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*these are the lists*/
+.ems li {
+    font-size: 1.3em
+}
+
+.rems li {
+    font-size: 1.3rem;
+}
+
+#headshot {
+    width: vw;
+}
+
+.center {
+    text-align: center;
+    padding: 2pc;
+}
+
+#sub {
+    color: rgb(44, 95, 171);
+    padding: 3pt;
+}

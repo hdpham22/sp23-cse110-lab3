@@ -10,9 +10,14 @@
 </head>
 <body>
     <header class="center">
-        <h1>Meeting Minutes</h1>
+        <div class="header">
+            <img id="headshot" src="screenshots/headshot.jpg" alt="Hieu Pham" width="50" height="80">
+            <h1>Meeting Minutes</h1>
+            <p>check out my <a href="https://www.linkedin.com/in/hieuducpham/">LinkedIn</a></p>
+        </div>
+        
         <nav style="background-color: aquamarine;">
-            <p>This is Nav</p>
+            <p id="nav">This is Nav</p>
         </nav>
         <hr>  
     </header>
@@ -35,22 +40,19 @@
 
         <br>
 
-        <section>
-            <img id="headshot" src="screenshots/headshot.jpg" alt="Hieu Pham" width="250" height="300">
-            <p>check out my <a href="https://www.linkedin.com/in/hieuducpham/">LinkedIn</a></p>
-            <audio controls>
+        <section class="media">
+            <audio controls class="audio">
                 <source src="Bruh-Sound-Effect.mp3">
             </audio>
 
-            <br>
-
-            <video width="320" height="240" controls>
+            <video width="320" height="240" controls class="video">
                 <source src="mov_bbb.mp4">
             </video>
+            <p class="element">element 3</p>
         </section>
 
         <form class="center">
-            <fieldset>
+            <fieldset class="options">
                 <legend>Radio</legend>
                 
                 <input type="radio" id="one">
@@ -62,7 +64,7 @@
                 <input type="radio" id="three">
                 <label>three</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="options">
                 <legend>Checkbox</legend>
                 
                 <input type="checkbox" id="One">
@@ -74,36 +76,38 @@
                 <input type="checkbox" id="Three">
                 <label>three</label>
             </fieldset>
-            <label>Datalist:</label>
-            <input list="choices">
-            <datalist id="choices">
-                <option>one</option>
-                <option>two</option>
-                <option>three</option>
-            </datalist>
-            <br>
-            <label>Select</label>
-            <select name="choice" id="selection">
-                <option value="">--Please choose an option--</option>
-                <option value="one">one</option>
-                <option value="two">two</option>
-                <option value="three">three</option>
-            </select>
+            <section class="bottom">
+                <label>Datalist:</label>
+                <input list="choices">
+                <datalist id="choices">
+                    <option>one</option>
+                    <option>two</option>
+                    <option>three</option>
+                </datalist>
+                <br>
+                <label>Select</label>
+                <select name="choice" id="selection">
+                    <option value="">--Please choose an option--</option>
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                </select>
 
-            <br>
-            <label>Write Something</label>
-            <br>
-            <textarea>
-            
-            </textarea>
-            <br>
-            <label>Name</label>
-            <input type="text">
-            <br>
-            <label>date</label>
-            <input type="date">
-            <br>
-            <button id="sub">Submit</button>
+                <br>
+                <label>Write <span id="decor">Something</span></label>
+                <br>
+                <textarea>
+                
+                </textarea>
+                <br>
+                <label>Name</label>
+                <input type="text">
+                <br>
+                <label>date</label>
+                <input type="date">
+                <br>
+                <button id="sub">Submit</button>
+            </section>
         </form>
 
     </main>

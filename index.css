@@ -1,12 +1,26 @@
 /*This is a CSS comment*/
+@media (max-width:1250px) {
+    #headshot {
+        display: none;
+    }
+}
+
+/*header styling*/
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
 nav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 0px 25px 0px;
 }
 
 /*these are the lists*/
 .ems li {
-    font-size: 1.3em
+    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .rems li {
@@ -15,6 +29,24 @@ nav {
 
 #headshot {
     width: vw;
+    position: static;
+}
+
+/*navbar style*/
+#nav {
+    position: sticky;
+}
+
+#nav:active {
+    background-color: pink;
+}
+
+/*this is media styling for grid*/
+.media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: end;
+    justify-items: center;
 }
 
 .center {
@@ -25,4 +57,37 @@ nav {
 #sub {
     color: rgb(44, 95, 171);
     padding: 3pt;
+}
+
+#sub:hover {
+    background-color: black;
+}
+
+
+/*this is form styling*/
+.options {
+    margin: 20px 200px 20px 200px;
+    height: auto;
+    max-width: 75%;
+    min-width: none;
+    border-style: solid;
+    border-color: bisque;
+    border-width: 3px;
+    border-radius: 5px;
+    display: block;
+}
+
+.bottom {
+    display: inline-block;
+}
+
+#decor {
+    text-decoration: wavy underline;
+}
+
+.bottom input {
+    margin: auto;
+    color:#003333;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

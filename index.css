@@ -13,18 +13,24 @@
     gap: 5px;
 }
 
-nav {
+nav, li {
     padding: 25px 0px 25px 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*these are the lists*/
 .ems li {
     font-size: 1.3em; 
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .rems li {
     font-size: 1.3rem; 
+    
+}
+
+li[class="red"] {
+    color: red;
 }
 
 #headshot {
@@ -49,7 +55,7 @@ nav {
     justify-items: center;
 }
 
-.center {
+*.center {
     text-align: center;
     padding: 2pc;
 }
